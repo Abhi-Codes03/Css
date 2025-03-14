@@ -1,0 +1,12 @@
+/* External css */
+p {
+  color: brown;
+  font-size: larger;
+  font-weight: bolder;
+}
+/* Para Class */
+.para {
+    color: blue;
+    font-size: x-large;
+    font-weight: bold;
+}
