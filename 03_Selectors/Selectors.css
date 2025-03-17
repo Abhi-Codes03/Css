@@ -1,0 +1,64 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Type Selector */
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* Class Selector */
+.highlight{
+    background-color: turquoise;
+}
+/* ID Selector */
+#Header{
+    color: greenyellow;
+    background-color: lightseagreen;
+}
+/* Attribute Selector */
+input[type="text"]{
+    border: 1px solid darkblue;
+    background-color: aqua;
+}
+/* Decedant Selector */
+article p{
+    font-style: italic;
+    color: darkred;
+    background-color: lightcoral;
+    padding: 10px;
+    margin-top: 15px;
+}
+/* Child Selector */
+div > p{
+    background-color: lime;
+    padding: 10px;
+}
+/* Adjacent Selector */
+h1 + p{
+    color: darkred;
+    font-weight: bolder;
+}
+/* General Sibling Selector */
+h2 ~ p{
+    color: green;
+    font-weight: bold;
+}
+/* Pseudo-class Selector */
+a:hover{
+    background-color: yellow;
+    color: red;
+    padding: 10px;
+}
+/* Pseudo-element Selector */
+p::first-letter{
+    font-weight: bolder;
+    font-size: 30px;
+    color: darkorchid;
+}
+/* Grouping Selector */
+h1,h2,h3{
+    color: deeppink;
+}
