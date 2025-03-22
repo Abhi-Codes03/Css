@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<!-- Here In-line Css is also Used. -->
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <!-- Default Flex (Row) -->
+        <h2>1. Default Flex (Row)</h2>
+        <div class="flexcontainer">
+            <div class="circle color-1">1</div>
+            <div class="circle color-2">2</div>
+            <div class="circle color-3">3</div>
+            <div class="circle color-4">4</div>
+            <div class="circle color-5">5</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Flex Direction (Row,coloumn....) -->
+        <h2>2.Flex Direction : Coloumn</h2>
+        <div class="flexcontainer" style="flex-direction: column;">
+            <div class="circle color-1">1</div>
+            <div class="circle color-2">2</div>
+            <div class="circle color-3">3</div>
+            <div class="circle color-4">4</div>
+            <div class="circle color-5">5</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Justify Content (Space-Between , Space Around.....) -->
+        <h2>3. Justify Content: Space-Between</h2>
+        <div class="flexcontainer" style="justify-content: space-between;">
+            <div class="circle color-1">1</div>
+            <div class="circle color-2">2</div>
+            <div class="circle color-3">3</div>
+            <div class="circle color-4">4</div>
+            <div class="circle color-5">5</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Align Items (Centre ,End.....) -->
+        <h2>4. Align Items: Center</h2>
+        <div class="flexcontainer" style="align-items:center;">
+            <div class="circle color-1">1</div>
+            <div class="circle color-2">2</div>
+            <div class="circle color-3">3</div>
+            <div class="circle color-4">4</div>
+            <div class="circle color-5">5</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Flex Wrap(Wrap , Reverse-Wrap) -->
+        <h2>5. Flex Wrap: Wrap</h2>
+        <div class="flexcontainer" style="flex-wrap:wrap;">
+            <div class="circle color-1">1</div>
+            <div class="circle color-2">2</div>
+            <div class="circle color-3">3</div>
+            <div class="circle color-4">4</div>
+            <div class="circle color-5">5</div>
+            <div class="circle color-6">6</div>
+            <div class="circle color-7">7</div>
+            <div class="circle color-8">8</div>
+            <div class="circle color-9">9</div>
+            <div class="circle color-10">10</div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <!-- Align Content with Space Around With Wrap Property -->
+        <h2>6.Align Content: Space-Around (with Wrap) </h2>
+        <div class="flexcontainer" style="flex-wrap: wrap ;  align-content: space-around ;">
+            <div class="circle color-1">1</div>
+            <div class="circle color-2">2</div>
+            <div class="circle color-3">3</div>
+            <div class="circle color-4">4</div>
+            <div class="circle color-5">5</div>
+            <div class="circle color-6">6</div>
+            <div class="circle color-7">7</div>
+            <div class="circle color-8">8</div>
+            <div class="circle color-9">9</div>
+            <div class="circle color-10">10</div>
+        </div>
+    </div>   
+
+    <div class="container">
+        <!-- Order Property-Changes the order  -->
+        <h2>7. Order Property</h2>
+        <div class="flexcontainer" >
+            <div class="circle color-1" style="order: 9;">1</div>
+            <div class="circle color-2" style="order: 7;">2</div>
+            <div class="circle color-3" style="order: 2;">3</div>
+            <div class="circle color-4" style="order: 3;">4</div>
+            <div class="circle color-5" style="order: 1;">5</div>
+            <div class="circle color-6" style="order: 8;">6</div>
+            <div class="circle color-7" style="order: 4;">7</div>
+            <div class="circle color-8" style="order: 6;">8</div>
+            <div class="circle color-9" style="order: 10;">9</div>
+            <div class="circle color-10"style="order: 5;">10</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Flex Grow - Changes the Size (Here 1:5 Ratio) -->
+        <h2>8. Flex Grow</h2>
+        <div class="flexcontainer" >
+            <div class="circle color-1" style="flex-grow: 1;">1</div>
+            <div class="circle color-2" style="flex-grow: 1;">2</div>
+            <div class="circle color-3" style="flex-grow: 1;">3</div>
+            <div class="circle color-4" style="flex-grow: 1;">4</div>
+            <div class="circle color-5" style="flex-grow: 1;">5</div>
+            <div class="circle color-6" style="flex-grow: 5;">6</div>
+            <div class="circle color-7" style="flex-grow: 1;">7</div>
+            <div class="circle color-8" style="flex-grow: 1;">8</div>
+            <div class="circle color-9" style="flex-grow: 5;">9</div>
+            <div class="circle color-10"style="flex-grow: 1">10</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Align Self (flex-start, flex-centre,stretch.....) -->
+        <h2>9. Align Self </h2>
+        <div class="flexcontainer">
+            <div class="circle color-1" style="align-self: flex-start;">1</div>
+            <div class="circle color-2" style="align-self: flex-centre;">2</div>
+            <div class="circle color-3" style="align-self: flex-end;">3</div>
+            <div class="circle color-4" style="align-self: stretch;">4</div>
+            <div class="circle color-5" >5</div>
+            <div class="circle color-6" >6</div>
+            <div class="circle color-7" >7</div>
+            <div class="circle color-8" >8</div>
+            <div class="circle color-9" >9</div>
+            <div class="circle color-10" >10</div>
+        </div>
+    </div>
+
+</body>
+</html>
